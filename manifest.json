@@ -1,9 +1,9 @@
 {
-  "name": "YOURAPPNAME",
-  "vendor": "vtex",
+  "name": "elastic-apm",
+  "vendor": "acupula",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "Elastic APM",
+  "description": "",
   "billingOptions": {
     "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
     "support": {
@@ -16,8 +16,6 @@
     ]
   },
   "builders": {
-    "react": "3.x",
-    "store": "0.x",
     "pixel": "0.x",
     "docs": "0.x"
   },
@@ -25,12 +23,17 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "YOUR APP NAME",
+    "title": "Elastic APM",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "serviceName": {
+        "title": "Service Name",
+        "description": "Enter the Service Name",
+        "type": "string"
+      },
+      "serviceName": {
+        "title": "Server URL",
+        "description": "Enter the Server URL",
         "type": "string"
       }
     }
