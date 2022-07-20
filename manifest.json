@@ -31,7 +31,7 @@
         "description": "Enter the Service Name",
         "type": "string"
       },
-      "serviceName": {
+      "serverUrl": {
         "title": "Server URL",
         "description": "Enter the Server URL",
         "type": "string"
