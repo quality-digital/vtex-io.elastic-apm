@@ -6,7 +6,7 @@ name: PR actions
 jobs:
   danger-ci:
     name: Danger CI
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
@@ -21,7 +21,7 @@ jobs:
           REQUIRE_CHANGELOG_VERSION: false
   io-app-test:
     name: IO app test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
@@ -43,7 +43,7 @@ jobs:
         uses: vtex/action-io-app-test@master
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
